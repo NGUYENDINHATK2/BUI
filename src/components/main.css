@@ -1,0 +1,81 @@
+.ani-zoom {
+  animation: 2s ease-in-out 1s normal none infinite running zoom;
+}
+.ani-tranX__right {
+  animation: tranX__right 1.5s ease-in-out running;
+}
+.navbar-ani {
+  animation: tranY__right 1s ease-in-out running;
+}
+.noline {
+  white-space: nowrap;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  50% {
+    transform: scale(1.5) translateX(100px);
+  }
+  100% {
+    transform: scale(1) translateX(0);
+  }
+}
+@media screen and (max-width: 768px) {
+  .ani-zoom {
+    animation: 2s ease-in-out 1s normal none infinite running zoomms;
+  }
+}
+@media (min-width: 1060px) {
+  .md\:h-full-ani {
+    animation: translateYheingt 1s ease-in-out running;
+  }
+}
+@keyframes translateYheingt {
+  0% {
+    height: 30%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes zoomms {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  50% {
+    transform: scale(1.5) translateX(80px);
+  }
+  100% {
+    transform: scale(1) translateX(0);
+  }
+}
+
+@keyframes tranX__right {
+  0% {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes tranY__right {
+  0% {
+    opacity: 0;
+    transform: translateY(-400px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
